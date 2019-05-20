@@ -11,7 +11,21 @@
     "esm": "cp min.js esm.js && echo 'export default getSet;'>>esm.js",
     "test": "node -e 'const m=require(`./`)(new Map);m(`key`,true);console.assert(m(`key`)===true)'"
   },
-  "keywords": ["get", "set", "map", "weakmap", "utility"],
+  "keywords": [
+    "get",
+    "set",
+    "map",
+    "weakmap",
+    "utility"
+  ],
   "author": "Andrea Giammarchi",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WebReflection/common-get-set.git"
+  },
+  "bugs": {
+    "url": "https://github.com/WebReflection/common-get-set/issues"
+  },
+  "homepage": "https://github.com/WebReflection/common-get-set#readme"
 }
