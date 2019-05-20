@@ -1,6 +1,6 @@
 {
   "name": "commonm-get-set",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "getSet($) returns a function(key[, value]) to $.get(key) or $.set(key, value)",
   "main": "cjs.js",
   "module": "esm.js",
