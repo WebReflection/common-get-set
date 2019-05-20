@@ -1,0 +1,17 @@
+{
+  "name": "commonm-get-set",
+  "version": "1.0.0",
+  "description": "getSet($) returns a function(key[, value]) to $.get(key) or $.set(key, value)",
+  "main": "cjs.js",
+  "module": "esm.js",
+  "unpkg": "min.js",
+  "scripts": {
+    "build": "npm run cjs && npm run esm && npm run test",
+    "cjs": "cp min.js cjs.js && echo 'module.exports=getSet;'>>cjs.js",
+    "esm": "cp min.js esm.js && echo 'export default getSet;'>>esm.js",
+    "test": "node -e 'const m=require(`./`)(new Map);m(`key`,true);console.assert(m(`key`)===true)'"
+  },
+  "keywords": ["get", "set", "map", "weakmap", "utility"],
+  "author": "Andrea Giammarchi",
+  "license": "ISC"
+}
